@@ -16,6 +16,7 @@
     name: "{{ item }}"
     state: latest
     update_cache: yes
+  ignore_errors: yes
   with_items: "{{ DJANGO_RPM_DEPS }}"
 
 - name: Make Django user
