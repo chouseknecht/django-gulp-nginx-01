@@ -4,7 +4,7 @@ gunicorn==19.4.5
 dj-database-url==0.4.1
 
 # Demo requirements
-djangorestframework
+djangorestframework<3.5
 markdown 
 django-filter
 dj-static==0.0.6
