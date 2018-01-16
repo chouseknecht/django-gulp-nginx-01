@@ -77,7 +77,7 @@ services:
       ASSET_PATHS:
       - /tmp/dist
       PROXY: yes
-      PROXY_PASS: 'http://django:8080'
+      PROXY_PASS: 'http://django:{{ DJANGO_PORT }}'
       PROXY_LOCATION: "~* /(admin|api)"
     ports:
     - '{{ DJANGO_PORT }}:8000'
