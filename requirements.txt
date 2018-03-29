@@ -5,7 +5,7 @@ gunicorn
 dj-database-url
 
 # Demo requirements
-djangorestframework
+djangorestframework<3.5
 markdown 
 django-filter
 dj-static
